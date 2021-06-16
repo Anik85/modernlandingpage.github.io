@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Modern Landing Page</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- Demo styles -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="intro-bg">
+      <div class="cloud-bg">
+        <div class="planet-bg">
+        </div>
+        <div class="top-content">
+          <img class="img1" src="img/virtual.png" alt="">
+          <img class="img2" src="img/hgroup-line.png" alt="">
+          <img class="img3" src="img/worlds.png" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae explicabo nisi ab minus error, quas maxime officiis officia, nam aliquid neque voluptas doloremque laboriosam deserunt soluta maiores sit! Ab, debitis.</p>
+        </div>
+        <nav class="nav-menu">
+          <div class="nav-eve" onclick="location.href='eve.html';" data-section="eve">
+            <div class="skew nav-bg">
+              <div class="grad"></div>
+            </div>
+            <div class="inner">
+              <p class="heading"><span> Eva Online</span></p>
+              <p class="details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, nulla odio.</p>
+              <p class="explore">Explore Further</p>
+            </div>
+          </div>
+          <div class="nav-warcraft" data-section="wow">
+            <div class="skew nav-bg">
+              <div class="grad"></div>
+            </div>
+            <div class="inner">
+              <p class="heading"><span> World of Warcraft</span></p>
+              <p class="details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, nulla odio.</p>
+              <p class="explore">Explore Further</p>
+            </div>
+          </div>
+          <div class="nav-secondlife" data-section="secondlife">
+            <div class="skew nav-bg">
+              <div class="grad"></div>
+            </div>
+            <div class="inner">
+              <p class="heading"><span> second Life</span></p>
+              <p class="details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, nulla odio.</p>
+              <p class="explore">Explore Further</p>
+            </div>
+          </div>
+        </nav>
+        
+      </div>
+    </div>
+    <div class="footer">
+      <img src="img/logo.gif" alt="">
+    </div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $(document).ready(function(){
+        anime({
+          targets: '.top-content img',
+          translateY: [-50,0],
+          delay: anime.stagger(200,{start:500}),
+          opacity: [0,1],
+          easing: 'easeInOutQuart'
+      });
+        anime({
+        targets: '.top-content p',
+        translateY: [-50,0],
+        delay: 1500,
+        opacity: [0,1],
+        easing: 'easeInOutQuart'
+      });
+      anime({
+        targets: '.nav-menu',
+        translateY: [-50,0],
+        delay: 2500,
+        opacity: [0,1],
+        easing: 'easeInOutQuart'
+      });
+      });
+    </script>
+    
+  </body>
+</html>

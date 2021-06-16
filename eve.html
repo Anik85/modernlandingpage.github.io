@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="homeburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li class="fab fa-facebook"> Share 0</li>
+            <li class="fab fa-twitter"> Tweet</li>
+            <li class="fab fa-pinterest"> Pin it</li>
+        </ul>
+    </nav>
+    <section class="banner">
+        <div class="container">
+          <div id="scene">
+            <div class="layer layer1" data-depth="0.3"><img src="img/dust-sparkle.png" alt=""></div>
+            <div class="layer" data-depth="0.5"><img src="img/tree-1.png" alt=""></div>
+            <div class="layer" data-depth="0.1"><img src="img/light-beams-2.png" alt=""></div>
+            <div class="layer" data-depth="0.7"><img src="img/tree-2.png" alt=""></div>
+            <div class="layer layer4" data-depth="0.3"><img src="img/wood-gas.png" alt=""></div>
+            <div class="layer" data-depth="0.4"><img src="img/light-beams-1.png" alt=""></div>
+            
+          </div>
+        </div>
+    </section>
+    <div class="footer1">
+        <img class="img1" src="img/virtual.png" alt="">
+        <img class="img2" src="img/worlds.png" alt="">
+        <img class="img3" src="img/logo.gif" alt="">
+    </div>
+    <section class="pre-section" id="pre-section">
+        <div class="pre-section-details">
+            <h2>Second Life</h2>
+            <img class="img1" src="img/secondlife-inner-content-line.png" alt="">
+            <p>Second Life is seen as an online marketplace as well as a game, and many players have been able to earn serious cash thanks to the easy way in-game currency can be sold for real-world money. More casual players use the game to build, customise and create, developing a literal second life in which their character can live out the player's desires and fantasies - whether that's a mansion and a helipad or the romance of a lifetime!</p>
+            <img class="img2" src="img/secondlife-inner-content-line.png" alt="">
+            <img class="img3" src="img/explore-further.png" alt="">
+            <p class="explore" onclick=""><a href="">Explore Further</a></p>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        window.onload=function(){
+            var hide=document.getElementById('pre-section');
+            document.onclick=function(div){
+                if(div.target.id == 'pre-section'){
+                    hide.style.display='none';
+                }
+            };
+        };
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+    
+</body>
+</html>
